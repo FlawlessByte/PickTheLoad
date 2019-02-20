@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Driver.DriverDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview1"
+            android:text="Please enter your details!"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Name"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textview1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Surname"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textInputLayout1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Surname"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Licence No."
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textInputLayout2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverLicenceNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Licence No."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Vehicle No."
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textInputLayout3">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverVehicleNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vehicle No."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Place"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textInputLayout4">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            android:hint="Phone No."
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textInputLayout5">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputDriverPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No."/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_centerInParent="true"
+            android:onClick="driverSignUpButtonClicked"
+            android:layout_below="@+id/textInputLayout6"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
