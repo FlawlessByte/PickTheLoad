@@ -7,14 +7,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.UUID;
 
 public class LorryPost {
-    public String unique_id, capacity, date, location_from, location_to, track_no, name, phone, from_uid, approved;
+    public String unique_id, capacity, date, location_from, location_to, truck_no, name, phone, from_uid, approved;
 
-    public LorryPost(String unique_id, String capacity, String date, String location_from, String location_to, String track_no, String name, String phone, String from_uid, String approved) {
+    public LorryPost(String unique_id, String capacity, String date, String location_from, String location_to, String truck_no, String name, String phone, String from_uid, String approved) {
         this.capacity = capacity;
         this.date = date;
         this.location_from = location_from;
         this.location_to = location_to;
-        this.track_no = track_no;
+        this.truck_no = truck_no;
         this.name = name;
         this.phone = phone;
         this.from_uid = from_uid;
@@ -22,13 +22,13 @@ public class LorryPost {
         this.unique_id = unique_id;
     }
 
-    public void makeLorryPost(String capacity, String date, String  location_from, String location_to, String track_no, String name, String phone) {
+    public void makeLorryPost(String capacity, String date, String  location_from, String location_to, String truck_no, String name, String phone) {
         this.unique_id = UUID.randomUUID().toString();
         this.capacity = capacity;
         this.date = date;
         this.location_from = location_from;
         this.location_to = location_to;
-        this.track_no = track_no;
+        this.truck_no = truck_no;
         this.name = name;
         this.phone = phone;
         this.from_uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -58,8 +58,8 @@ public class LorryPost {
         this.location_to = location_to;
     }
 
-    public void setTrack_no(String track_no) {
-        this.track_no = track_no;
+    public void settruck_no(String truck_no) {
+        this.truck_no = truck_no;
     }
 
     public void setName(String name) {
@@ -94,8 +94,8 @@ public class LorryPost {
         return location_to;
     }
 
-    public String getTrack_no() {
-        return track_no;
+    public String gettruck_no() {
+        return truck_no;
     }
 
     public String getName() {

@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Admin.PostLoadReviewActivity"></activity>
+        <activity android:name=".Admin.PostLorryReviewActivity"></activity>
+        <activity android:name=".Admin.PostLoadReviewActivity" />
         <activity android:name=".Admin.AdminHomeActivity" />
         <activity android:name=".Admin.AdminLoginActivity" />
         <activity android:name=".Merchant.MerchantLoggedActivity" />

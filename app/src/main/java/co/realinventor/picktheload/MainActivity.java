@@ -1,6 +1,7 @@
 package co.realinventor.picktheload;
 
 import androidx.appcompat.app.AppCompatActivity;
+import co.realinventor.picktheload.Admin.AdminLoginActivity;
 import co.realinventor.picktheload.Authentication.LoginActivity;
 
 import android.content.Intent;
@@ -17,5 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void modeSelectButtonPressed(View view){
         startActivity(new Intent(this, LoginActivity.class).putExtra("mode", view.getTag().toString()));
+    }
+
+    public void adminModeSelected(View view){
+        startActivity(new Intent(this, AdminLoginActivity.class));
     }
 }
