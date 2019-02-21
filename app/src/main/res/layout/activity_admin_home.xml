@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Admin.AdminHomeActivity">
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -22,26 +22,16 @@
             android:layout_width="150dp"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_margin="8dp"
-            android:tag="driver"
-            android:onClick="modeSelectButtonPressed"
-            android:text="Driver" />
+            android:onClick="adminReviewLorryButtonPressed"
+            android:text="Review Lorry Posts" />
 
         <Button
             android:layout_height="150dp"
             android:layout_width="150dp"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_margin="8dp"
-            android:tag="merchant"
-            android:onClick="modeSelectButtonPressed"
-            android:text="Merchant" />
-
-        <Button
-            android:layout_height="150dp"
-            android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_margin="8dp"
-            android:tag="admin"
-            android:text="Admin" />
+            android:onClick="adminReviewLoadButtonPressed"
+            android:text="Review Load Posts" />
 
 
     </GridLayout>

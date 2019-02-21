@@ -33,8 +33,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputDriverName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -48,8 +47,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputDriverSurname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Surname"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -63,8 +61,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputDriverLicenceNo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Licence No."/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -78,8 +75,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputDriverVehicleNo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Vehicle No."/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -93,8 +89,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputDriverPlace"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Place"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -109,7 +104,7 @@
                 android:id="@+id/textInputDriverPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone No."/>
+                android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

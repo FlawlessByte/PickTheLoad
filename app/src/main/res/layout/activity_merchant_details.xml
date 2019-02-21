@@ -33,8 +33,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -48,8 +47,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantSurname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Surname"/>
+                android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -63,8 +61,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantShopName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Shop Name"/>
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -78,8 +75,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantRegNo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Shop Register No."/>
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -93,8 +89,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantPlace"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Place"/>
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -108,8 +103,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantPhone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone No."/>
+                android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

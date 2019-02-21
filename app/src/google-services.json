@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "345410821364",
+    "firebase_url": "https://picktheload.firebaseio.com",
+    "project_id": "picktheload",
+    "storage_bucket": "picktheload.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345410821364:android:444e3df8a7f7006e",
+        "android_client_info": {
+          "package_name": "co.realinventor.picktheload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345410821364-1ehmk1p3l0vnhag5j7v9fhibtd6eisrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.realinventor.picktheload",
+            "certificate_hash": "ee69fb920bf87d4e0ee724af65130c07b6fe8182"
+          }
+        },
+        {
+          "client_id": "345410821364-669bhu6u99lvred751ab9peofs2o1nap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlHEsKtwKvP1VnGFRblEd2yGyU5ZCpCsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345410821364-669bhu6u99lvred751ab9peofs2o1nap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

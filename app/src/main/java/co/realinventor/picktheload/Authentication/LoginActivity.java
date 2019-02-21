@@ -2,6 +2,9 @@ package co.realinventor.picktheload.Authentication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import co.realinventor.picktheload.Driver.DriverLoggedActivity;
+import co.realinventor.picktheload.MainActivity;
+import co.realinventor.picktheload.Merchant.MerchantLoggedActivity;
 import co.realinventor.picktheload.R;
 
 import android.content.Intent;
@@ -16,6 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -32,24 +36,21 @@ public class LoginActivity extends AppCompatActivity {
 
         Log.d("Activity", "LoginActivity");
 
+        FirebaseApp.initializeApp(this);
+
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
             switch (auth.getCurrentUser().getDisplayName()) {
-                case "User": {
-                    Log.d("Logged", "User");
-                    //startActivity(new Intent(LoginActivity.this, LoggedActivity.class));
+                case "driver": {
+                    Log.d("Logged", "driver");
+                    startActivity(new Intent(LoginActivity.this, DriverLoggedActivity.class));
                     break;
                 }
-                case "Med_Store": {
-                    Log.d("Logged", "Med_Store");
-                    //startActivity(new Intent(LoginActivity.this, MedLoggedActivity.class));
-                    break;
-                }
-                case "Ambulance": {
-                    Log.d("Logged", "Ambulance");
-                    //startActivity(new Intent(LoginActivity.this, ServiceLoggedActivity.class));
+                case "merchant": {
+                    Log.d("Logged", "Merchant");
+                    startActivity(new Intent(LoginActivity.this, MerchantLoggedActivity.class));
                     break;
                 }
                 default:
@@ -89,9 +90,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("Button", "SignUp button clicked");
-//                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-//                intent.putExtra("mode", intentMode);
-//                startActivity(intent);
+                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                intent.putExtra("mode", intentMode);
+                startActivity(intent);
             }
         });
 
@@ -99,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d("Button", "reset button clicked");
-//                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
         });
 
@@ -143,15 +144,16 @@ public class LoginActivity extends AppCompatActivity {
                                     Log.d("Sign in", "Successful");
 
                                     Intent intent = null;
-                                    if(auth.getCurrentUser().getDisplayName().equals("user")){
-//                                        intent = new Intent(LoginActivity.this, LoggedActivity.class);
+                                    if(auth.getCurrentUser().getDisplayName().equals("driver")){
+                                        intent = new Intent(LoginActivity.this, DriverLoggedActivity.class);
                                     }
-                                    else if(auth.getCurrentUser().getDisplayName().equals("medical")){
-//                                        intent = new Intent(LoginActivity.this, MedLoggedActivity.class);
+                                    else if(auth.getCurrentUser().getDisplayName().equals("merchant")){
+                                        intent = new Intent(LoginActivity.this, MerchantLoggedActivity.class);
                                     }
-                                    else if(auth.getCurrentUser().getDisplayName().equals("ambulance")){
-//                                        intent = new Intent(LoginActivity.this, MedLoggedActivity.class);
+                                    else{
+                                        intent = new Intent(LoginActivity.this, MainActivity.class);
                                     }
+
                                     startActivity(intent);
                                     finish();
                                 }

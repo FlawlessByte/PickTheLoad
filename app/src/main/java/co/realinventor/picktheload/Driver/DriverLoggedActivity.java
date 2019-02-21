@@ -20,7 +20,8 @@ public class DriverLoggedActivity extends AppCompatActivity {
     }
 
     public void driverPostLorryButtonClicked(View view){
-
+        PostLorryDialog dialog = new PostLorryDialog();
+        dialog.show(getSupportFragmentManager().beginTransaction(), PostLorryDialog.TAG);
     }
 
 

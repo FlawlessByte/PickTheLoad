@@ -2,6 +2,10 @@ package co.realinventor.picktheload.Authentication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import co.realinventor.picktheload.Driver.DriverDetailsActivity;
+import co.realinventor.picktheload.Driver.DriverLoggedActivity;
+import co.realinventor.picktheload.Merchant.MerchantDetailsActivity;
+import co.realinventor.picktheload.Merchant.MerchantLoggedActivity;
 import co.realinventor.picktheload.R;
 
 import android.content.Intent;
@@ -128,10 +132,10 @@ public class SignupActivity extends AppCompatActivity {
                                                         Log.d("Sign Up", "Display Name updated");
                                                         Log.d("Update profile", "User profile updated.");
 
-//                                                        if(intentMode.equals("user"))
-//                                                            startActivity(new Intent(SignupActivity.this, SignInDetailsActivity.class));
-//                                                        if(intentMode.equals("medical"))
-//                                                            startActivity(new Intent(SignupActivity.this, MedSignInActivity.class));
+                                                        if(intentMode.equals("driver"))
+                                                            startActivity(new Intent(SignupActivity.this, DriverDetailsActivity.class));
+                                                        if(intentMode.equals("merchant"))
+                                                            startActivity(new Intent(SignupActivity.this, MerchantDetailsActivity.class));
 //                                                        if(intentMode.equals("ambulance"))
 //                                                            startActivity(new Intent(SignupActivity.this, ServiceDetailsActivity.class));
 

@@ -43,16 +43,48 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    android:hint="Truck Type Needed"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputPostLoadTruckType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintAnimationEnabled="true"
                     android:hint="Capacity"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryCapacity"
+                        android:id="@+id/textInputPostLoadCapacity"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="number"
                         android:textColor="@android:color/black"
-                        android:backgroundTint="@color/colorPrimary" />
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintAnimationEnabled="true"
+                    android:hint="Goods Type"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_marginBottom="10dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputPostLoadGoodsType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <RelativeLayout
@@ -72,13 +104,13 @@
                         android:layout_toLeftOf="@+id/calendarImageButton"
                         android:layout_marginBottom="10dp">
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/textInputPostLorryDate"
+                            android:id="@+id/textInputPostLoadDate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:enabled="false"
-                            android:inputType="text"
                             android:textColor="@android:color/black"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:inputType="text" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <ImageButton
@@ -98,12 +130,12 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryLocationFrom"
+                        android:id="@+id/textInputPostLoadLocationFrom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
                         android:textColor="@android:color/black"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="text"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -114,28 +146,28 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryLocationTo"
+                        android:id="@+id/textInputPostLoadLocationTo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
                         android:textColor="@android:color/black"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
-                    android:hint="Truck No."
+                    android:hint="Expected Price"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryTrackNo"
+                        android:id="@+id/textInputPostLorryExpPrice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
                         android:textColor="@android:color/black"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="number"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -146,12 +178,12 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryName"
+                        android:id="@+id/textInputPostLoadName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text"
                         android:textColor="@android:color/black"
-                        android:backgroundTint="@color/colorPrimary"/>
+                        android:backgroundTint="@color/colorPrimary"
+                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -162,18 +194,18 @@
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/textInputPostLorryPhone"
+                        android:id="@+id/textInputPostLoadPhone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="phone"
+                        android:textColor="@android:color/black"
                         android:backgroundTint="@color/colorPrimary"
-                        android:textColor="@android:color/black" />
+                        android:inputType="phone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/postButton"
+                    android:id="@+id/postButtonLoad"
                     style="@style/AppTheme.Button"
                     android:text="Post"
                     android:layout_gravity="center"/>
