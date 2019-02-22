@@ -39,7 +39,7 @@ public class AdminLoginActivity extends AppCompatActivity {
                     //Some of the inputs are empty
                     Toast.makeText(AdminLoginActivity.this, "Check username or password!", Toast.LENGTH_SHORT).show();
                 }
-                else if(email.equals("admin") && password.equals("admin")){
+                else if(email.equals("admin@picktheload.com") && password.equals("admin")){
                     //Log in success
                     Toast.makeText(AdminLoginActivity.this, "Login success!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(AdminLoginActivity.this, AdminHomeActivity.class));

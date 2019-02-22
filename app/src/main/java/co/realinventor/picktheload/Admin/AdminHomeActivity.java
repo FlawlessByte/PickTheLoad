@@ -2,6 +2,7 @@ package co.realinventor.picktheload.Admin;
 
 import androidx.appcompat.app.AppCompatActivity;
 import co.realinventor.picktheload.Common.Constants;
+import co.realinventor.picktheload.MainActivity;
 import co.realinventor.picktheload.R;
 
 import android.content.Intent;
@@ -24,5 +25,10 @@ public class AdminHomeActivity extends AppCompatActivity {
 
     public void adminReviewLoadButtonPressed(View view){
         startActivity(new Intent(this, PostLoadReviewActivity.class));
+    }
+
+    public  void logOutButtonClicked(View view){
+        startActivity(new Intent(this, MainActivity.class));
+        this.finish();
     }
 }

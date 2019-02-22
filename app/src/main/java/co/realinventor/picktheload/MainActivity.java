@@ -18,9 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void modeSelectButtonPressed(View view){
         startActivity(new Intent(this, LoginActivity.class).putExtra("mode", view.getTag().toString()));
+        finish();
     }
 
     public void adminModeSelected(View view){
         startActivity(new Intent(this, AdminLoginActivity.class));
+        finish();
     }
 }
