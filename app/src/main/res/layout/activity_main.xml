@@ -17,28 +17,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_height="150dp"
             android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_margin="8dp"
             android:tag="driver"
             android:onClick="modeSelectButtonPressed"
             android:text="Driver" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_height="150dp"
             android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_margin="8dp"
             android:tag="merchant"
             android:onClick="modeSelectButtonPressed"
             android:text="Merchant" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_height="150dp"
             android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_margin="8dp"
             android:onClick="adminModeSelected"
             android:tag="admin"

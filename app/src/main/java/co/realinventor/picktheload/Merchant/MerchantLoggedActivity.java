@@ -23,11 +23,11 @@ public class MerchantLoggedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_merchant_logged);
 
-        // Attaching the layout to the toolbar object
-        Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
-        // Setting toolbar as the ActionBar with setSupportActionBar() call
-        toolbar.setTitle("Merchant");
-        setSupportActionBar(toolbar);
+//        // Attaching the layout to the toolbar object
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.tool_bar);
+//        // Setting toolbar as the ActionBar with setSupportActionBar() call
+//        toolbar.setTitle("Merchant");
+//        setSupportActionBar(toolbar);
 
         Constants.CURRENT_USER = Constants.MERCHANT;
     }
@@ -50,31 +50,31 @@ public class MerchantLoggedActivity extends AppCompatActivity {
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu, this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_logout) {
-
-            Log.d("MenuSignOutButton", "Pressed");
-            FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(this, MainActivity.class));
-            this.finish();
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu, this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_logout) {
+//
+//            Log.d("MenuSignOutButton", "Pressed");
+//            FirebaseAuth.getInstance().signOut();
+//            startActivity(new Intent(this, MainActivity.class));
+//            this.finish();
+//
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+//    }
 
     @Override
     public void onBackPressed() {

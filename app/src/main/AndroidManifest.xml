@@ -22,20 +22,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Admin.PostLorryReviewActivity" />
-        <activity android:name=".Admin.PostLoadReviewActivity" />
-        <activity android:name=".Admin.AdminHomeActivity" />
-        <activity android:name=".Admin.AdminLoginActivity" />
+        <activity android:name=".Admin.PostLorryReviewActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Admin.PostLoadReviewActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Admin.AdminHomeActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Admin.AdminLoginActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
         <activity android:name=".Merchant.MerchantLoggedActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
         <activity android:name=".Driver.DriverLoggedActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Merchant.MerchantDetailsActivity" />
-        <activity android:name=".Driver.DriverDetailsActivity" />
-        <activity android:name=".Authentication.ResetPasswordActivity" />
-        <activity android:name=".Authentication.SignupActivity" />
-        <activity android:name=".Authentication.LoginActivity" />
-        <activity android:name=".MainActivity">
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+        <activity android:name=".Merchant.MerchantDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Driver.DriverDetailsActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Authentication.ResetPasswordActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Authentication.SignupActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".Authentication.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
         </activity>
     </application>
 

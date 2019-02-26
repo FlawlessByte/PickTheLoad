@@ -43,6 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Capacity"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -67,6 +68,7 @@
                         android:layout_alignParentLeft="true"
                         android:layout_centerInParent="true"
                         app:hintAnimationEnabled="true"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:hint="Date"
                         android:textColorHint="@android:color/darker_gray"
                         android:layout_toLeftOf="@+id/calendarImageButton"
@@ -94,6 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Location From"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -110,6 +113,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Location To"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -126,6 +130,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Truck No."
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -142,6 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Name"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -158,6 +164,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:hintAnimationEnabled="true"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:hint="Phone"
                     android:textColorHint="@android:color/darker_gray"
                     android:layout_marginBottom="10dp">
@@ -170,11 +177,11 @@
                         android:textColor="@android:color/black" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <Button
-                    android:layout_width="wrap_content"
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/postButton"
-                    style="@style/AppTheme.Button"
+                    style="@style/Widget.MaterialComponents.Button"
                     android:text="Post"
                     android:layout_gravity="center"/>
 

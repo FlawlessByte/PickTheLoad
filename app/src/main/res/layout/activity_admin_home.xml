@@ -17,23 +17,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_height="150dp"
             android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_margin="8dp"
             android:onClick="adminReviewLorryButtonPressed"
             android:text="Review Lorry Posts" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_height="150dp"
             android:layout_width="150dp"
-            style="@style/Widget.AppCompat.Button.Colored"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_margin="8dp"
             android:onClick="adminReviewLoadButtonPressed"
             android:text="Review Load Posts" />
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="8dp"
