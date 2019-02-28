@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -19,6 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MerchantDetailsActivity extends AppCompatActivity {
     private TextInputEditText textInputMerchantName, textInputMerchantSurname, textInputMerchantShopName,
             textInputMerchantRegNo, textInputMerchantPlace, textInputMerchantPhone;
+    private TextInputLayout textInputLayoutPhone;
     private String uid;
 
     @Override
@@ -32,6 +34,7 @@ public class MerchantDetailsActivity extends AppCompatActivity {
         textInputMerchantRegNo = findViewById(R.id.textInputMerchantRegNo);
         textInputMerchantPlace = findViewById(R.id.textInputMerchantPlace);
         textInputMerchantPhone = findViewById(R.id.textInputMerchantPhone);
+        textInputLayoutPhone = findViewById(R.id.textInputLayoutPhone);
 
 
         uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -44,11 +47,16 @@ public class MerchantDetailsActivity extends AppCompatActivity {
         String regNo = textInputMerchantRegNo.getText().toString();
         String place = textInputMerchantPlace.getText().toString();
         String phone = textInputMerchantPhone.getText().toString();
+        boolean numError = false;
+        if(!(phone.length()==10 || phone.length()==12)){
+            numError = true;
+            textInputLayoutPhone.setError("Please enter a valid number!");
+        }
 
         if(TextUtils.isEmpty(merchantName) || TextUtils.isEmpty(surName) || TextUtils.isEmpty(shopName) || TextUtils.isEmpty(regNo) ||
-                TextUtils.isEmpty(place) || TextUtils.isEmpty(phone) ){
+                TextUtils.isEmpty(place) || TextUtils.isEmpty(phone) || numError ){
             //Some of the inputs are empty
-            Toast.makeText(this, "Fill all the inputs and try again!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Check all the inputs and try again!", Toast.LENGTH_SHORT).show();
         }
         else{
             MerchantDetails merchantDetails = new MerchantDetails(uid, merchantName, surName, shopName, regNo, place, phone);

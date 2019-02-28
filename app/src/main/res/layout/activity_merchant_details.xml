@@ -98,18 +98,20 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout6"
+            android:id="@+id/textInputLayoutPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:hintAnimationEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:hint="Phone No."
+            app:errorEnabled="true"
             android:layout_marginBottom="10dp"
             android:layout_below="@id/textInputLayout5">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputMerchantPhone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -119,7 +121,7 @@
             android:text="Sign Up"
             android:layout_centerInParent="true"
             android:onClick="merchantSignUpButtonClicked"
-            android:layout_below="@+id/textInputLayout6"/>
+            android:layout_below="@+id/textInputLayoutPhone"/>
 
 
     </RelativeLayout>
